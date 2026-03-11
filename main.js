@@ -30,7 +30,7 @@ const translations = {
 
     "services-title": "Serviços",
     "services-intro":
-      "Três formas simples de trabalhar com Renata: sessões individuais, sessões de EFT/TFT e palestras para grupos e eventos.",
+      "Quatro formas de trabalhar com Renata: coaching, sessões de EFT/TFT, formação em EFT/TFT e palestras para grupos e eventos.",
     "service-coaching-title": "Coaching em bem-estar & autocuidado",
     "service-coaching-body":
       "Encontros individuais online para organizar pensamentos, entender padrões emocionais e construir uma rotina mais leve e intencional.",
@@ -54,6 +54,16 @@ const translations = {
     "service-speaking-item-1": "Temas como bem-estar, autoconhecimento e autoestima.",
     "service-speaking-item-2": "Conteúdo baseado em neurociência e experiência clínica.",
     "service-speaking-item-3": "Formatos: palestras, rodas de conversa e workshops.",
+
+    "service-training-title": "Formação em EFT & TFT",
+    "service-training-body":
+      "Treinamentos para pessoas que desejam se aprofundar e atuar com EFT/TFT, em formatos individuais ou em grupo.",
+    "service-training-item-1":
+      "Conteúdo teórico e prático com foco em aplicação responsável.",
+    "service-training-item-2":
+      "Acompanhamento próximo durante o processo de formação.",
+    "service-training-item-3":
+      "Opções de certificação em módulos ou programas completos.",
 
     "services-cta-text":
       "Não precisa ter tudo claro agora. Em poucas linhas você pode contar o que está vivendo e juntos encontraremos o formato ideal.",
@@ -171,7 +181,7 @@ const translations = {
 
     "services-title": "Services",
     "services-intro":
-      "Three simple ways to work with Renata: 1:1 sessions, EFT/TFT sessions and talks for groups and events.",
+      "Four ways to work with Renata: coaching, EFT/TFT sessions, EFT/TFT professional training and talks for groups and events.",
     "service-coaching-title": "Wellness & self-care coaching",
     "service-coaching-body":
       "Online 1:1 sessions to organize your thoughts, understand emotional patterns and build a lighter, more intentional routine.",
@@ -202,6 +212,16 @@ const translations = {
       "Content grounded in neuroscience and clinical experience.",
     "service-speaking-item-3":
       "Formats: talks, conversations and workshops.",
+
+    "service-training-title": "EFT & TFT professional training",
+    "service-training-body":
+      "Training for people who want to deepen and work with EFT/TFT, in individual or group formats.",
+    "service-training-item-1":
+      "Theory and practice with a strong focus on responsible application.",
+    "service-training-item-2":
+      "Close support from Renata throughout the training journey.",
+    "service-training-item-3":
+      "Certification options in modules or full programs.",
 
     "services-cta-text":
       "You don’t have to have everything figured out. In a few lines you can share what you’re going through and together we’ll find the best format.",
