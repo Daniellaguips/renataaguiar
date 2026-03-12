@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Renata Aguiar – Household & Family Support Professional</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      @page {
+        size: letter;
+        margin: 0.5in 0.6in;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: #1e1d22;
+        line-height: 1.55;
+        font-size: 15px;
+        background: #f5f3f0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        max-width: 8.5in;
+        margin: 24px auto;
+        background: #fff;
+        padding: 48px 56px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+        .page {
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+        }
+        .no-print {
+          display: none !important;
+        }
+      }
+
+      /* ── Header ─────────────────────────────── */
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #c9a882;
+        margin-bottom: 24px;
+      }
+
+      .header-name {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #2c2926;
+      }
+
+      .header-tagline {
+        margin: 4px 0 0;
+        font-size: 14px;
+        color: #7a6f63;
+        font-style: italic;
+      }
+
+      .header-contact {
+        text-align: right;
+        font-size: 13px;
+        color: #5a534b;
+        line-height: 1.6;
+      }
+
+      .header-contact a {
+        color: #5a534b;
+        text-decoration: none;
+      }
+
+      /* ── Intro ──────────────────────────────── */
+
+      .intro {
+        font-size: 15.5px;
+        color: #3a352f;
+        margin: 0 0 22px;
+        max-width: 100%;
+      }
+
+      /* ── Two-column layout ──────────────────── */
+
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 36px;
+        margin-bottom: 22px;
+      }
+
+      .col-section h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #c9a882;
+        margin: 0 0 10px;
+        font-weight: 700;
+        border-bottom: 1px solid #ece6de;
+        padding-bottom: 6px;
+      }
+
+      .col-section ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .col-section li {
+        padding: 3px 0;
+        font-size: 14.5px;
+        position: relative;
+        padding-left: 16px;
+        color: #3a352f;
+      }
+
+      .col-section li::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: #c9a882;
+        font-weight: 700;
+      }
+
+      /* ── Highlights ─────────────────────────── */
+
+      .highlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      .highlight-box {
+        background: #faf7f3;
+        border: 1px solid #ece6de;
+        border-radius: 6px;
+        padding: 14px 16px;
+        text-align: center;
+      }
+
+      .highlight-box strong {
+        display: block;
+        font-size: 14px;
+        color: #2c2926;
+        margin-bottom: 2px;
+      }
+
+      .highlight-box span {
+        font-size: 12.5px;
+        color: #7a6f63;
+      }
+
+      /* ── References & footer ────────────────── */
+
+      .references {
+        background: #faf7f3;
+        border: 1px solid #ece6de;
+        border-radius: 6px;
+        padding: 16px 20px;
+        margin-bottom: 22px;
+      }
+
+      .references h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #c9a882;
+        margin: 0 0 8px;
+        font-weight: 700;
+      }
+
+      .references p {
+        margin: 0;
+        font-size: 14px;
+        color: #3a352f;
+      }
+
+      .footer-note {
+        text-align: center;
+        font-size: 12.5px;
+        color: #9a9189;
+        margin: 0;
+        padding-top: 16px;
+        border-top: 1px solid #ece6de;
+      }
+
+      /* ── Print button ───────────────────────── */
+
+      .no-print {
+        text-align: center;
+        margin: 16px auto 32px;
+      }
+
+      .print-btn {
+        display: inline-block;
+        background: #c9a882;
+        color: #fff;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-family: inherit;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .print-btn:hover {
+        filter: brightness(0.95);
+      }
+
+      /* ── Mobile ─────────────────────────────── */
+
+      @media (max-width: 600px) {
+        .page {
+          padding: 28px 24px;
+          margin: 12px;
+        }
+        .header {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .header-contact {
+          text-align: left;
+        }
+        .columns {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+        .highlights {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div>
+          <h1 class="header-name">Renata Aguiar</h1>
+          <p class="header-tagline">Household & Family Support Professional</p>
+        </div>
+        <div class="header-contact">
+          <a href="mailto:renata_aguiar1@hotmail.com">renata_aguiar1@hotmail.com</a><br />
+          <a href="https://wa.me/5534996864215">WhatsApp: +55 34 99686-4215</a><br />
+          <a href="https://www.instagram.com/psi_renataaguiar/">@psi_renataaguiar</a>
+        </div>
+      </header>
+
+      <p class="intro">
+        Warm, reliable, and detail-oriented professional with years of experience
+        managing homes, coordinating household staff, and caring for children.
+        Background in psychology and wellness brings a calm, nurturing presence
+        to every household. Fluent in English and Portuguese. Available immediately.
+      </p>
+
+      <div class="columns">
+        <div class="col-section">
+          <h2>Household Management</h2>
+          <ul>
+            <li>Full home organization, cleaning, and daily upkeep</li>
+            <li>Meal planning, grocery shopping, and home-cooked meals</li>
+            <li>Coordinating teams of household staff</li>
+            <li>Managing schedules, vendors, and service providers</li>
+            <li>Retreat and event center coordination experience</li>
+          </ul>
+        </div>
+        <div class="col-section">
+          <h2>Childcare & Family Support</h2>
+          <ul>
+            <li>Experienced mother of two — patient, attentive, dependable</li>
+            <li>School drop-off/pick-up, homework help, and activities</li>
+            <li>Age-appropriate routines, meals, and enrichment</li>
+            <li>Calm, emotionally supportive approach with children</li>
+            <li>Background in child psychology and emotional wellbeing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlights">
+        <div class="highlight-box">
+          <strong>Fluent English</strong>
+          <span>Bilingual (English & Portuguese)</span>
+        </div>
+        <div class="highlight-box">
+          <strong>Psychology Background</strong>
+          <span>Neuroscience of wellbeing specialist</span>
+        </div>
+        <div class="highlight-box">
+          <strong>Excellent References</strong>
+          <span>From American families — available on request</span>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="col-section">
+          <h2>Additional Skills</h2>
+          <ul>
+            <li>Cooking — diverse cuisines including Brazilian and American</li>
+            <li>Laundry, ironing, and wardrobe organization</li>
+            <li>Pet care and light outdoor maintenance</li>
+            <li>Discreet, trustworthy, and respectful of family privacy</li>
+          </ul>
+        </div>
+        <div class="col-section">
+          <h2>Professional Background</h2>
+          <ul>
+            <li>Licensed psychologist (Brazil) — emotional wellness expertise</li>
+            <li>Managed home and retreat center operations</li>
+            <li>Coordinated staff teams and daily logistics</li>
+            <li>Co-authored two published books on wellbeing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="references">
+        <h2>References</h2>
+        <p>
+          Strong, personal references from traditional American families are
+          available upon request. Renata has earned the trust of every household
+          she has worked with through reliability, warmth, and attention to detail.
+        </p>
+      </div>
+
+      <p class="footer-note">
+        Renata Aguiar · Based in the U.S. · Available for full-time, part-time, or live-out positions · Willing to travel
+      </p>
+    </div>
+
+    <div class="no-print">
+      <button class="print-btn" onclick="window.print()">Save as PDF / Print</button>
+    </div>
+  </body>
+</html>
