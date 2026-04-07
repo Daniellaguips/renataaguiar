@@ -16,6 +16,10 @@
         <span></span><span></span><span></span>
       </button>
       <div class="topbar-title">EFT &amp; TFT Professional Training</div>
+      <div class="lang-toggle">
+        <button class="lang-toggle-btn is-active" data-lang="en">EN</button>
+        <button class="lang-toggle-btn" data-lang="pt">PT</button>
+      </div>
       <div class="topbar-progress">
         <div class="topbar-progress-bar"><div class="topbar-progress-fill" style="width:0%"></div></div>
         <span class="topbar-progress-text">0% complete</span>
@@ -140,6 +144,15 @@
               <div class="callout-label">💡 Pro Tip — Surprising Fact</div>
               <p>The amygdala fires a stress response in approximately 12 milliseconds. The prefrontal cortex takes 200–500 milliseconds to respond. That means <strong>you react almost 40 times faster than you think</strong>.</p>
               <p><em>Source: LeDoux (1996), "The Emotional Brain." The 12ms figure is approximate and based on subcortical processing pathways.</em></p>
+            </div>
+
+            <!-- Interactive: Reaction Speed Demo -->
+            <h3>Experience It — Your Reaction Speed vs. Your Amygdala</h3>
+            <div class="reaction-demo">
+              <p class="reaction-demo-title">How Fast Can You React?</p>
+              <p class="reaction-demo-desc">When the box turns RED, click it as fast as you can. Then compare your speed to your amygdala's 12ms.</p>
+              <div class="reaction-demo-area is-waiting">Click here to start</div>
+              <p class="reaction-demo-insight"></p>
             </div>
 
             <h3>The Body as an Emotional Archive</h3>
@@ -367,6 +380,54 @@
               </tbody>
             </table>
 
+            <!-- Interactive Tapping Diagram -->
+            <h3>Interactive Tapping Map — Click to Explore</h3>
+            <div class="tap-diagram">
+              <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
+                <!-- Simple head/body outline -->
+                <ellipse cx="150" cy="80" rx="55" ry="65" fill="none" stroke="#d4c4b8" stroke-width="2"/>
+                <line x1="150" y1="145" x2="150" y2="310" stroke="#d4c4b8" stroke-width="2"/>
+                <line x1="150" y1="180" x2="90" y2="250" stroke="#d4c4b8" stroke-width="2"/>
+                <line x1="150" y1="180" x2="210" y2="250" stroke="#d4c4b8" stroke-width="2"/>
+                <line x1="90" y1="250" x2="60" y2="330" stroke="#d4c4b8" stroke-width="2"/>
+                <line x1="210" y1="250" x2="240" y2="330" stroke="#d4c4b8" stroke-width="2"/>
+                <!-- Tapping points -->
+                <g class="tap-point" data-code="TH" data-name="Top of Head (TH)" data-location="Exact center of the crown" data-meridian="Convergence Point">
+                  <circle cx="150" cy="18" r="10"/><text x="150" y="18">TH</text>
+                </g>
+                <g class="tap-point" data-code="EB" data-name="Eyebrow (EB)" data-location="Inner edge of the eyebrow, near the bridge of the nose" data-meridian="Bladder Meridian">
+                  <circle cx="118" cy="58" r="10"/><text x="118" y="58">EB</text>
+                </g>
+                <g class="tap-point" data-code="SE" data-name="Side of Eye (SE)" data-location="Bone at the outer corner of the eye" data-meridian="Gallbladder Meridian">
+                  <circle cx="205" cy="68" r="10"/><text x="205" y="68">SE</text>
+                </g>
+                <g class="tap-point" data-code="UE" data-name="Under Eye (UE)" data-location="Bone directly under the eye, aligned with the pupil" data-meridian="Stomach Meridian">
+                  <circle cx="135" cy="92" r="10"/><text x="135" y="92">UE</text>
+                </g>
+                <g class="tap-point" data-code="UN" data-name="Under Nose (UN)" data-location="Between the nose and upper lip" data-meridian="Governing Vessel">
+                  <circle cx="150" cy="112" r="10"/><text x="150" y="112">UN</text>
+                </g>
+                <g class="tap-point" data-code="CH" data-name="Chin (CH)" data-location="Crease between lower lip and chin" data-meridian="Central Vessel">
+                  <circle cx="150" cy="132" r="10"/><text x="150" y="132">CH</text>
+                </g>
+                <g class="tap-point" data-code="CB" data-name="Collarbone (CB)" data-location="~2 cm below and to the side of the sternum notch" data-meridian="Kidney Meridian">
+                  <circle cx="120" cy="168" r="10"/><text x="120" y="168">CB</text>
+                </g>
+                <g class="tap-point" data-code="UA" data-name="Under Arm (UA)" data-location="~10 cm (4 inches) below the armpit" data-meridian="Spleen Meridian">
+                  <circle cx="95" cy="220" r="10"/><text x="95" y="220">UA</text>
+                </g>
+                <g class="tap-point" data-code="KC" data-name="Karate Chop (KC)" data-location="Side of the hand, between little finger base and wrist" data-meridian="Small Intestine Meridian">
+                  <circle cx="55" cy="340" r="10"/><text x="55" y="340">KC</text>
+                </g>
+              </svg>
+              <div class="tap-info">
+                <p class="tap-info-hint">👆 Click any point to see its details and tapping animation</p>
+                <p class="tap-info-name" style="display:none"></p>
+                <p class="tap-info-location" style="display:none"></p>
+                <p class="tap-info-meridian" style="display:none"></p>
+              </div>
+            </div>
+
             <div class="callout callout-key">
               <div class="callout-label">🔑 Key Concept — Correct Tapping Technique</div>
               <h3 class="callout-title">How to Tap</h3>
@@ -440,6 +501,71 @@
               </ul>
               <p><em>"If your emotion was at 9 and now it's at 6, real release has already happened. Tapping is cumulative — the more you practice, the faster the body responds."</em></p>
             </div>
+
+            <!-- Before / After Scenario -->
+            <h2>See the Difference — Right vs. Wrong</h2>
+            <div class="scenario">
+              <div class="scenario-tabs">
+                <button class="scenario-tab is-wrong is-active" data-panel="wrong">❌ Watch Sarah Get It Wrong</button>
+                <button class="scenario-tab is-right" data-panel="right">✓ Now Watch Her Get It Right</button>
+              </div>
+              <div class="scenario-panel is-wrong-panel is-active" data-panel="wrong">
+                <p class="scenario-name">Sarah's first session with a client</p>
+                <p>Sarah learned the tapping points yesterday. Today, she's working with her first practice client, Mark, who says he's feeling anxious about a work meeting.</p>
+                <ul>
+                  <li>Sarah skips the SUD measurement — she figures she'll just ask "do you feel better?" at the end</li>
+                  <li>Mark says: "It feels like a knot in my stomach." Sarah creates the reminder phrase: <strong>"This anxiety"</strong></li>
+                  <li>She taps through all 9 points in about 15 seconds — rushing, barely pausing at each point</li>
+                  <li>At the end, she asks: "Better?" Mark shrugs: "I guess?"</li>
+                </ul>
+                <div class="scenario-result">Result: No measurable change. Mark leaves unsure if it worked. Sarah doubts the technique.</div>
+              </div>
+              <div class="scenario-panel is-right-panel" data-panel="right">
+                <p class="scenario-name">Sarah does it right — same client, same issue</p>
+                <p>Sarah takes a breath, remembers her training, and starts over:</p>
+                <ul>
+                  <li>She asks Mark: "On a scale of 0–10, how intense is that feeling right now?" <strong>SUD: 7</strong></li>
+                  <li>Mark says: "It's like a knot in my stomach." Sarah uses his <strong>exact words</strong>: "this knot in my stomach"</li>
+                  <li>KC × 3: "Even though I have this knot in my stomach, I deeply and completely accept myself"</li>
+                  <li>She taps each point for <strong>5–7 taps</strong>, saying "this knot in my stomach" at each one — steady rhythm, ~1 tap per second</li>
+                  <li>Three deep breaths. Then: "What number are you at now?" <strong>SUD: 4</strong></li>
+                  <li>She does another round. Final SUD: <strong>2</strong>. Mark: "Wow, the knot is almost gone."</li>
+                </ul>
+                <div class="scenario-result">Result: SUD dropped from 7 to 2. Mark felt the shift. Sarah's confidence soars. Three differences made it work: measuring (SUD), using exact words, and proper tapping rhythm.</div>
+              </div>
+            </div>
+
+            <!-- Interactive Point Identification Quiz -->
+            <h2>Test Yourself — Can You Find the Point?</h2>
+            <div class="point-quiz" data-questions='[{"question":"Find the Karate Chop (KC) point — used for the setup phrase","answer":"KC","explanation":"The KC point is on the side of the hand, between the little finger base and wrist."},{"question":"Find the Under Eye (UE) point — associated with the Stomach meridian","answer":"UE","explanation":"UE is on the bone directly under the eye, aligned with the pupil."},{"question":"Find the Collarbone (CB) point — associated with the Kidney meridian","answer":"CB","explanation":"CB is about 2 cm below and to the side of the sternum notch."},{"question":"Find the Under Arm (UA) point — the one often mistakenly omitted from the anxiety algorithm","answer":"UA","explanation":"UA is about 10 cm (4 inches) below the armpit. Essential in the TFT anxiety algorithm!"},{"question":"Find the Top of Head (TH) point — the convergence point","answer":"TH","explanation":"TH is at the exact center of the crown of the head."}]'>
+              <p class="point-quiz-prompt">Ready?</p>
+              <p class="point-quiz-question">Click the diagram to identify each tapping point. Test how well you know the map!</p>
+              <button class="point-quiz-start" style="padding:8px 20px;border-radius:999px;border:none;background:var(--accent);color:#fff;font-weight:600;font-size:0.88rem;cursor:pointer;font-family:inherit">Start Point Quiz →</button>
+              <div class="tap-diagram">
+                <svg viewBox="0 0 300 420" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="150" cy="80" rx="55" ry="65" fill="none" stroke="#d4c4b8" stroke-width="2"/>
+                  <line x1="150" y1="145" x2="150" y2="310" stroke="#d4c4b8" stroke-width="2"/>
+                  <line x1="150" y1="180" x2="90" y2="250" stroke="#d4c4b8" stroke-width="2"/>
+                  <line x1="150" y1="180" x2="210" y2="250" stroke="#d4c4b8" stroke-width="2"/>
+                  <line x1="90" y1="250" x2="60" y2="330" stroke="#d4c4b8" stroke-width="2"/>
+                  <line x1="210" y1="250" x2="240" y2="330" stroke="#d4c4b8" stroke-width="2"/>
+                  <g class="tap-point" data-code="TH" data-name="Top of Head"><circle cx="150" cy="18" r="10"/><text x="150" y="18" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="EB" data-name="Eyebrow"><circle cx="118" cy="58" r="10"/><text x="118" y="58" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="SE" data-name="Side of Eye"><circle cx="205" cy="68" r="10"/><text x="205" y="68" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="UE" data-name="Under Eye"><circle cx="135" cy="92" r="10"/><text x="135" y="92" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="UN" data-name="Under Nose"><circle cx="150" cy="112" r="10"/><text x="150" y="112" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="CH" data-name="Chin"><circle cx="150" cy="132" r="10"/><text x="150" y="132" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="CB" data-name="Collarbone"><circle cx="120" cy="168" r="10"/><text x="120" y="168" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="UA" data-name="Under Arm"><circle cx="95" cy="220" r="10"/><text x="95" y="220" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                  <g class="tap-point" data-code="KC" data-name="Karate Chop"><circle cx="55" cy="340" r="10"/><text x="55" y="340" fill="#fff" font-size="9" font-weight="700" text-anchor="middle" dominant-baseline="central">?</text></g>
+                </svg>
+              </div>
+              <div class="point-quiz-feedback"></div>
+              <button class="point-quiz-next">Next Question →</button>
+              <div class="point-quiz-score"></div>
+            </div>
+
+            <hr>
 
             <div class="callout callout-homework">
               <div class="callout-label">📝 Homework — Module 2</div>
@@ -603,6 +729,22 @@
             <div class="callout callout-tip">
               <div class="callout-label">💡 Pro Tip — Use the Client's Language</div>
               <p>Always match the variation to what feels authentic for the person. If a phrase creates discomfort or resistance, it's working against you. The setup phrase should feel like a bridge, not a wall.</p>
+            </div>
+
+            <!-- Interactive: Setup Phrase Builder -->
+            <h2>Build Your Own Setup Phrase</h2>
+            <div class="phrase-builder">
+              <p class="phrase-builder-title">Setup Phrase Builder</p>
+              <p class="phrase-builder-desc">Type what you (or your client) are feeling right now. Watch your personalized setup phrase appear instantly.</p>
+              <input class="phrase-builder-input" type="text" placeholder="e.g., knot in my stomach, fear of speaking up, tightness in my chest...">
+              <div class="phrase-builder-output">
+                <p class="phrase-builder-label">Your Setup Phrase</p>
+                <div class="phrase-builder-phrase"></div>
+                <p class="phrase-builder-label">Variations (if the original doesn't resonate)</p>
+                <div class="phrase-builder-variation"></div>
+                <div class="phrase-builder-variation"></div>
+                <div class="phrase-builder-variation"></div>
+              </div>
             </div>
 
             <h2>The Reminder Phrase — The Most Common Mistake</h2>
@@ -809,45 +951,58 @@
               <p>In TFT, always <strong>measure SUD after each treatment sequence</strong> and before deciding next steps. The algorithm isn't a one-shot procedure — it's a cycle: tap the sequence, check SUD, repeat if needed, then proceed to 9-Gamut when SUD begins dropping.</p>
             </div>
 
+            <!-- Interactive: Algorithm Reference (chips that expand) -->
             <h2>The 6 Core TFT Algorithms</h2>
+            <p>Each emotion has its own tapping sequence. Click any condition to see the full protocol.</p>
+            <div class="algo-selector">
+              <div class="algo-selector-options">
+                <button class="algo-selector-btn" data-algo="anxiety">😰 Anxiety</button>
+                <button class="algo-selector-btn" data-algo="depression">😔 Depression</button>
+                <button class="algo-selector-btn" data-algo="anger">😤 Anger</button>
+                <button class="algo-selector-btn" data-algo="phobia">😱 Phobia</button>
+                <button class="algo-selector-btn" data-algo="pain">🤕 Pain</button>
+                <button class="algo-selector-btn" data-algo="trauma">💔 Trauma</button>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Anxiety Algorithm</h3>
-              <p class="algorithm-sequence">UE × 5 → UA × 5 → CB × 5 &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat UE → UA → CB</p>
-              <p>The most commonly used algorithm in daily practice. Results are typically rapid. <strong>Note:</strong> The under-arm (UA) point is essential in this sequence — it is part of Callahan's published anxiety protocol and should not be omitted.</p>
-              <p><em>SUD checkpoint: measure after the first sequence, before the 9-Gamut. If SUD has not dropped at all, consider Psychological Reversal correction (KC tapping) before repeating.</em></p>
-            </div>
+              <div class="algo-selector-result" data-algo-panel="anxiety">
+                <h4>Anxiety Algorithm</h4>
+                <div class="algo-selector-sequence">UE × 5 → UA × 5 → CB × 5 &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat UE → UA → CB</div>
+                <p>The most commonly used algorithm in daily practice. Results are typically rapid. <strong>The under-arm (UA) point is essential</strong> — it is part of Callahan's published anxiety protocol and should not be omitted.</p>
+                <p class="algo-selector-note">SUD checkpoint: measure after the first sequence, before the 9-Gamut. If SUD has not dropped at all, consider Psychological Reversal correction (KC tapping) before repeating.</p>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Depression Algorithm</h3>
-              <p class="algorithm-sequence">Gamut × 30 → CB × 5 &nbsp;+&nbsp; 9-Gamut</p>
-              <p>If there is no result after 3 rounds, use Psychological Reversal (PR) correction before continuing. Depression often involves deeper PR patterns.</p>
-              <p><em>Note: Extended Gamut tapping (30 repetitions) is an adapted protocol. In Callahan's standard work, the sequence typically begins with specific meridian points. This variation is presented as taught in this training — practitioners should cross-reference with published sources.</em></p>
-            </div>
+              <div class="algo-selector-result" data-algo-panel="depression">
+                <h4>Depression Algorithm</h4>
+                <div class="algo-selector-sequence">Gamut × 30 → CB × 5 &nbsp;+&nbsp; 9-Gamut</div>
+                <p>If there is no result after 3 rounds, use Psychological Reversal (PR) correction before continuing. Depression often involves deeper PR patterns.</p>
+                <p class="algo-selector-note">Extended Gamut tapping (30 repetitions) is an adapted protocol. Practitioners should cross-reference with Callahan's published sources.</p>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Anger Algorithm</h3>
-              <p class="algorithm-sequence">Little Finger × 5 → CB × 5 &nbsp;+&nbsp; 9-Gamut</p>
-              <p>The effect is frequently immediate — this makes it an excellent algorithm for live demonstration. The little finger point is specifically associated with anger in TFT meridian mapping.</p>
-            </div>
+              <div class="algo-selector-result" data-algo-panel="anger">
+                <h4>Anger Algorithm</h4>
+                <div class="algo-selector-sequence">Little Finger × 5 → CB × 5 &nbsp;+&nbsp; 9-Gamut</div>
+                <p>The effect is frequently immediate — this makes it an excellent algorithm for live demonstration. The little finger point is specifically associated with anger in TFT meridian mapping.</p>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Phobia Algorithm</h3>
-              <p class="algorithm-sequence">EB → UE → UA → CB &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat</p>
-              <p>Repeat across sessions. Strong phobias may require multiple sessions — each one reduces the SUD faster than the last. Tapping is cumulative.</p>
-            </div>
+              <div class="algo-selector-result" data-algo-panel="phobia">
+                <h4>Phobia Algorithm</h4>
+                <div class="algo-selector-sequence">EB → UE → UA → CB &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat</div>
+                <p>Repeat across sessions. Strong phobias may require multiple sessions — each one reduces the SUD faster than the last. Tapping is cumulative.</p>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Physical Pain Algorithm</h3>
-              <p class="algorithm-sequence">Gamut × 50 → CB × 5 &nbsp;+&nbsp; 9-Gamut</p>
-              <p>This alleviates the <em>intensity</em> of pain — it does not cure the underlying condition. <strong>Always communicate this clearly to the client.</strong></p>
-              <p><em>Note: Extended Gamut tapping (50 repetitions) is an adapted variation. Always verify the medical context of pain complaints and work within your scope of practice.</em></p>
-            </div>
+              <div class="algo-selector-result" data-algo-panel="pain">
+                <h4>Physical Pain Algorithm</h4>
+                <div class="algo-selector-sequence">Gamut × 50 → CB × 5 &nbsp;+&nbsp; 9-Gamut</div>
+                <p>This alleviates the <em>intensity</em> of pain — it does not cure the underlying condition. <strong>Always communicate this clearly to the client.</strong></p>
+                <p class="algo-selector-note">Extended Gamut tapping (50 repetitions) is an adapted variation. Always verify the medical context and work within your scope of practice.</p>
+              </div>
 
-            <div class="algorithm-card">
-              <h3>Trauma Algorithm</h3>
-              <p class="algorithm-sequence">EB → UE → UA → CB &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat</p>
-              <p>Intense material may surface during this protocol. Requires practitioner preparation, grounding skills, and a safety plan.</p>
+              <div class="algo-selector-result" data-algo-panel="trauma">
+                <h4>Trauma Algorithm</h4>
+                <div class="algo-selector-sequence">EB → UE → UA → CB &nbsp;+&nbsp; 9-Gamut &nbsp;+&nbsp; Repeat</div>
+                <p>Intense material may surface during this protocol. Requires practitioner preparation, grounding skills, and a safety plan. <strong>Never use in a first session.</strong></p>
+                <p class="algo-selector-note">⚠️ See the safety warning below before using this algorithm with any client.</p>
+              </div>
             </div>
 
             <div class="callout callout-warning">
@@ -1054,11 +1209,415 @@
               <p class="module-objective">Understand the 6-stage emotional cycle, master tuning (maintaining emotional contact during tapping), and learn the three gentle trauma techniques essential for safe practice.</p>
             </div>
 
-            <p><em>Full translated content with 6-stage emotional cycle diagram, tuning technique, Movie Technique, Tell the Story, Tearless Trauma, aspects, Generalization Effect, Personal Peace Procedure, Chasing the Pain, and Mariana case study — coming in next build pass.</em></p>
+            <!-- Video Placeholder -->
+            <div class="video-placeholder">
+              <span class="video-badge">Coming Soon</span>
+              <div class="video-play-icon"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div>
+              <div class="video-title">The Emotional Cycle, Tuning &amp; Gentle Techniques</div>
+              <div class="video-duration">~25 min</div>
+              <div class="video-outline">
+                <ul>
+                  <li>The 6-stage emotional cycle — how emotions build and reinforce themselves</li>
+                  <li>Tuning: why emotional contact during tapping is everything</li>
+                  <li>The gentle trauma triad: Movie Technique, Tell the Story, Tearless Trauma</li>
+                  <li>Aspects, Generalization Effect, and Personal Peace Procedure</li>
+                  <li>Chasing the Pain — following sensations as they shift</li>
+                  <li>Case Study: Mariana — the crying loop</li>
+                </ul>
+              </div>
+            </div>
+            <details class="video-prompt">
+              <summary>AI Video Generation Prompt</summary>
+              <div class="video-prompt-content">
+                <p><strong>Scene:</strong> Same warm studio. Renata seated for most of this module — the tone is contemplative and intimate. Whiteboard or on-screen graphic for the 6-stage cycle diagram. Standing for the technique demonstrations.</p>
+                <p><strong>Speaker:</strong> Renata — her warmest, most reflective delivery in the course. This module is about sensitivity, attunement, and gentleness. Voice should be slower, more spacious.</p>
+                <p><strong>Script outline (25 min):</strong></p>
+                <ul>
+                  <li>(0:00–2:00) Opening: "Today we slow down. We've learned the points, the algorithms, the sequences. Now we learn something harder — how to truly be present with what someone feels." Frame this module as the bridge between technique and artistry.</li>
+                  <li>(2:00–6:00) The 6-stage emotional cycle. Draw or reveal each stage on screen: trigger → automatic thought → emotion → physical symptom → behavior → consequence/reinforcement. Give a concrete example (road rage scenario). Explain how the cycle self-reinforces.</li>
+                  <li>(6:00–10:00) Tuning technique. Explain what tuning is — maintaining emotional contact with the issue while tapping. Demonstrate the difference between "tuned" and "intellectualizing." Show how to guide a client back to the feeling when they drift into analysis.</li>
+                  <li>(10:00–17:00) The three gentle techniques, demonstrated one by one: Movie Technique (watch the memory, pause when intensity rises, tap at pause points), Tell the Story (narrate aloud, practitioner watches for spikes), Tearless Trauma (guess the SUD without fully activating the memory).</li>
+                  <li>(17:00–19:00) Aspects — visual, auditory, emotional, physical facets of the same event. Why one round of tapping may not resolve everything. How to check for remaining aspects.</li>
+                  <li>(19:00–21:00) Generalization Effect and Personal Peace Procedure. How resolving specific events causes similar events to resolve. The systematic approach of listing and tapping through bothersome memories.</li>
+                  <li>(21:00–22:30) Chasing the Pain — following sensations as they move through the body during tapping.</li>
+                  <li>(22:30–25:00) Mariana case study — present the challenge, pause for viewer reflection, reveal the solution using Tell the Story technique.</li>
+                </ul>
+                <p><strong>Visual aids:</strong> 6-stage emotional cycle diagram (circular, with arrows showing reinforcement loop). Side-by-side comparison of "tuned" vs. "intellectualizing" client responses. Step-by-step graphics for each gentle technique.</p>
+                <p><strong>Tone:</strong> Intimate, spacious, reflective. This is the module where technique meets heart. Slower pace than previous modules. Pauses for the viewer to absorb.</p>
+              </div>
+            </details>
+
+            <h2>Understanding How Emotions Build — The 6-Stage Cycle</h2>
+            <p>Before we can intervene skillfully, we need to understand how emotions build, escalate, and sustain themselves. Every emotional reaction follows a predictable cycle — and once you can see it, you can intervene at any stage.</p>
 
             <div class="callout callout-key">
-              <div class="callout-label">🔑 Content Preview</div>
-              <p>This module covers: the 6-stage emotional cycle (trigger → automatic thought → emotion → physical symptom → behavior → consequence/reinforcement), tuning technique for maintaining emotional contact, the gentle trauma triad (Movie Technique, Tell the Story, Tearless Trauma), aspects and the Generalization Effect, Personal Peace Procedure, Chasing the Pain, Case Study: Mariana (crying loop).</p>
+              <div class="callout-label">🔑 Key Concept — The 6-Stage Emotional Cycle</div>
+              <h3 class="callout-title">From Trigger to Reinforcement</h3>
+              <ol>
+                <li><strong>Trigger:</strong> An external event or internal reminder activates the system. It could be a smell, a word, a glance, a memory — anything the brain registers as significant.</li>
+                <li><strong>Automatic Thought:</strong> The brain generates an instant interpretation — usually unconscious and usually negative. <em>"This is dangerous." "I'm not good enough." "Something bad is about to happen."</em></li>
+                <li><strong>Emotion:</strong> The thought produces a feeling: anxiety, anger, sadness, shame. This is the subjective experience — what the person would report if you asked them.</li>
+                <li><strong>Physical Symptom:</strong> The emotion manifests in the body: tight chest, racing heart, churning stomach, tension headache, cold hands, flushed face. The body is now part of the loop.</li>
+                <li><strong>Behavior:</strong> The person acts on the feeling: avoidance, withdrawal, aggression, crying, freezing, overthinking, compulsive checking. This is the visible response.</li>
+                <li><strong>Consequence/Reinforcement:</strong> The behavior produces a result that feeds back into the cycle. Avoidance brings temporary relief — which reinforces the avoidance. The cycle closes and strengthens itself.</li>
+              </ol>
+            </div>
+
+            <p><strong>Example — Road Rage Cycle:</strong></p>
+            <ol>
+              <li><strong>Trigger:</strong> Someone cuts you off in traffic</li>
+              <li><strong>Automatic thought:</strong> <em>"They don't respect me. Nobody respects me."</em></li>
+              <li><strong>Emotion:</strong> Anger, indignation</li>
+              <li><strong>Physical symptom:</strong> Jaw clenches, grip tightens on the steering wheel, heart rate spikes</li>
+              <li><strong>Behavior:</strong> Honking, yelling, aggressive driving</li>
+              <li><strong>Consequence:</strong> Temporary feeling of power — followed by guilt, exhaustion, and a reinforced belief that the world is hostile</li>
+            </ol>
+
+            <div class="callout callout-tip">
+              <div class="callout-label">💡 Pro Tip — Identifying the Entry Point</div>
+              <p>As a practitioner, your job is to identify <strong>where in the cycle your client is stuck</strong>. Some clients come to you at the emotion stage ("I feel so anxious"). Others come at the behavior stage ("I can't stop checking my phone"). Others come at the physical symptom stage ("My chest is always tight"). Every entry point is valid — and each one tells you something about how to begin.</p>
+              <p>The most powerful interventions often target <strong>stage 2 (automatic thought)</strong> — because that's where the interpretation happens. Change the interpretation, and everything downstream shifts.</p>
+            </div>
+
+            <h2>Tuning — The Art of Staying Connected</h2>
+            <p>Here is something I want you to understand deeply: <strong>tapping without tuning is like playing a guitar without strings.</strong> The mechanics are there, but nothing resonates.</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — What Is Tuning?</div>
+              <h3 class="callout-title">Maintaining Emotional Contact During Tapping</h3>
+              <p><strong>Tuning</strong> means the client maintains active emotional contact with the issue while tapping. They are not just thinking about the problem — they are <em>feeling</em> it in their body, in their chest, in their stomach, in their throat. The meridian system is activated, the emotional charge is present, and the tapping can do its work.</p>
+              <p><strong>Without tuning, tapping becomes mechanical.</strong> The client goes through the motions — tapping the points, saying the phrases — but the emotional system isn't engaged. The result? Minimal change. The SUD barely moves. Both practitioner and client feel frustrated.</p>
+            </div>
+
+            <h3>Tuned vs. Intellectualizing — How to Tell the Difference</h3>
+            <table class="tapping-table">
+              <thead>
+                <tr><th>Sign</th><th>Tuned (Good)</th><th>Intellectualizing (Not Tuned)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Voice quality</td><td>Slower, emotionally colored, sometimes shaky</td><td>Flat, analytical, report-like</td></tr>
+                <tr><td>Body language</td><td>Shifting, sighing, touching chest or stomach</td><td>Still, controlled, arms crossed</td></tr>
+                <tr><td>Language</td><td>"I feel this weight in my chest"</td><td>"I know logically that this shouldn't bother me"</td></tr>
+                <tr><td>Eye contact</td><td>May look away, eyes may water</td><td>Steady, composed, "performing" calm</td></tr>
+                <tr><td>SUD response</td><td>Changes (up or down) between rounds</td><td>Stays the same round after round</td></tr>
+              </tbody>
+            </table>
+
+            <h3>How to Guide a Client Back to Tuning</h3>
+            <p>When you notice a client drifting into their head — analyzing, explaining, narrating without feeling — gently bring them back:</p>
+            <ul>
+              <li><strong>"Where do you feel that in your body right now?"</strong> — This redirects attention from mind to body.</li>
+              <li><strong>"Stay with that feeling for a moment. Don't explain it — just notice it."</strong> — Permission to feel without analyzing.</li>
+              <li><strong>"If that feeling had a color, what would it be?"</strong> — Engages the sensory, non-verbal brain.</li>
+              <li><strong>"On a scale of 0 to 10, how strongly do you feel it right now — not how strongly you think you should feel it?"</strong> — Distinguishes between felt experience and intellectual judgment.</li>
+              <li><strong>"Let's slow down. Take a breath. Now — what comes up?"</strong> — Creates space for the emotion to surface.</li>
+            </ul>
+
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Warning — Tuning and Overwhelm</div>
+              <h3 class="callout-title">There Is a Line Between Tuned and Flooded</h3>
+              <p>Tuning does <strong>not</strong> mean forcing the client to re-live their worst moment at full intensity. A client who is <strong>flooded</strong> — overwhelmed, unable to speak, dissociating — is not tuned. They are in survival mode, and tapping will not be effective.</p>
+              <p>The ideal tuning zone is a <strong>SUD of 5-8</strong>: strong enough that the emotional system is activated, manageable enough that the client can still communicate, observe, and participate in the process.</p>
+              <p>If a client moves above SUD 9 during tuning, <strong>pause tapping immediately</strong>. Use grounding (deep breathing, 5-4-3-2-1 sensory exercise) to bring them back to a workable range before continuing.</p>
+            </div>
+
+            <h2>The Gentle Trauma Triad</h2>
+            <p>Now we arrive at three of the most important techniques in your entire training. These are the <strong>gentle approaches to trauma</strong> — methods designed to process painful memories without retraumatizing the client. Gary Craig developed these specifically because he recognized that some clients cannot and should not be asked to "think about the worst part" of their experience.</p>
+            <p>Each technique offers a different level of emotional distance. Choose based on what the client can tolerate.</p>
+
+            <h3>1. The Movie Technique</h3>
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Movie Technique</div>
+              <h3 class="callout-title">Watching the Memory From a Safe Distance</h3>
+              <p>The client imagines the traumatic memory as a short movie playing on a screen. They give the movie a title (this creates cognitive distance) and begin "watching" from the beginning.</p>
+              <p><strong>How it works:</strong></p>
+              <ol>
+                <li>Ask the client to give the memory a <strong>short title</strong> — like a movie name. ("The Car Accident." "The Phone Call." "That Day at School.")</li>
+                <li>Ask them to <strong>"press play"</strong> and begin watching the movie in their mind, narrating silently.</li>
+                <li>When the intensity <strong>begins to rise</strong> — even slightly — they raise a hand or say "stop."</li>
+                <li><strong>Pause the movie.</strong> Measure SUD at this moment. Tap on whatever is coming up at this pause point.</li>
+                <li>When SUD drops to 3 or below, <strong>"press play" again</strong> and continue the movie from where you stopped.</li>
+                <li>Repeat: play → intensity rises → stop → tap → SUD drops → play again.</li>
+                <li>Continue until the client can <strong>watch the entire movie from start to finish without any intensity spike</strong>.</li>
+              </ol>
+              <p><strong>Why it works:</strong> The "movie" metaphor creates psychological distance. The client is the <em>viewer</em>, not the <em>participant</em>. This distance makes the emotional charge accessible without being overwhelming. Each pause-and-tap moment resolves a specific intensity peak, and over time the entire movie becomes neutral.</p>
+            </div>
+
+            <div class="callout callout-tip">
+              <div class="callout-label">💡 Pro Tip — Movie Technique Details</div>
+              <p>Keep the "movie" <strong>short</strong> — ideally a specific event lasting a few minutes, not an entire period of life. If the client says "my whole childhood," help them narrow it to a single specific scene. The more specific the movie, the more effective the technique.</p>
+              <p>The title matters more than you might think. A title like <strong>"That Terrible Day"</strong> keeps the emotion loaded. Consider guiding toward something more neutral: <strong>"The Tuesday Incident"</strong> or even something slightly humorous, if the client is ready for it. The title itself begins the distancing process.</p>
+            </div>
+
+            <h3>2. Tell the Story Technique</h3>
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Tell the Story</div>
+              <h3 class="callout-title">Narrating While the Practitioner Watches for Spikes</h3>
+              <p>In this technique, the client tells the story of the event <strong>out loud</strong> while the practitioner watches carefully for signs of emotional intensity — changes in voice, pauses, tears, body tension, flushing.</p>
+              <p><strong>How it works:</strong></p>
+              <ol>
+                <li>Ask the client to <strong>begin telling the story from the beginning</strong> — slowly, in their own words.</li>
+                <li>Watch their body, voice, and face. The moment you notice <strong>any sign of rising intensity</strong> — a catch in the voice, a sudden pause, eyes watering, shoulders tensing — gently say: <strong>"Let's stop here."</strong></li>
+                <li>Ask: <strong>"What are you feeling right now? Where in your body?"</strong> Measure SUD.</li>
+                <li><strong>Tap on this specific moment</strong> until SUD drops to 3 or below.</li>
+                <li>Ask the client to <strong>go back a few sentences before the intensity point</strong> and continue the story from there.</li>
+                <li>If they pass through that point calmly, continue. If intensity rises at a new point, stop and tap again.</li>
+                <li>The story is "complete" when the client can <strong>tell the entire narrative from start to finish without any emotional spike</strong>.</li>
+              </ol>
+              <p><strong>Why it works:</strong> The practitioner becomes a compassionate co-regulator. The client doesn't have to monitor their own intensity — you do it for them. This allows them to be fully present in the story while knowing someone is watching, ready to stop the moment it becomes too much.</p>
+            </div>
+
+            <div class="callout callout-exercise">
+              <div class="callout-label">✏️ Exercise — Practicing Tell the Story</div>
+              <h3 class="callout-title">Partner Practice (Mild Content Only)</h3>
+              <p>With a practice partner, try this with a <strong>mildly annoying memory</strong> (SUD 3-4 maximum — not a trauma). One person tells the story while the other watches for intensity signals. Practice:</p>
+              <ul>
+                <li>Noticing changes in voice tone, speed, or volume</li>
+                <li>Watching for physical shifts — posture changes, hand movements, facial tension</li>
+                <li>Saying "Let's stop here" with gentleness and calm authority</li>
+                <li>Asking "What are you feeling right now?" without leading the answer</li>
+              </ul>
+              <p><em>Switch roles after 10 minutes. Debrief together: what did you notice? What was it like to be watched so carefully? What was it like to be the watcher?</em></p>
+            </div>
+
+            <h3>3. Tearless Trauma Technique</h3>
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Tearless Trauma</div>
+              <h3 class="callout-title">Processing Without Activating</h3>
+              <p>This is the gentlest of the three techniques. The client works on the trauma <strong>without fully activating it emotionally</strong>. Instead of feeling the intensity, they <em>estimate</em> what it would be.</p>
+              <p><strong>How it works:</strong></p>
+              <ol>
+                <li>Ask the client to <strong>think about the event — but not to go into it</strong>. Just acknowledge that it exists, like seeing a book on a shelf without opening it.</li>
+                <li>Ask: <strong>"If you were to fully feel this memory right now, what do you guess your SUD would be? Don't feel it — just guess."</strong></li>
+                <li>The client gives an estimated SUD (this is called the <strong>"guessed SUD"</strong>).</li>
+                <li><strong>Tap on the event</strong> using the guessed SUD as your benchmark — even though the client is not fully feeling the emotion.</li>
+                <li>After each round, ask again: <strong>"If you were to feel it now, what do you guess?"</strong></li>
+                <li>Continue until the guessed SUD drops to 3 or below.</li>
+                <li>Now — and only now — ask the client to <strong>actually try to feel the memory</strong>. Measure the real SUD.</li>
+                <li>If the real SUD is low (0-3), the work is done. If it's higher, switch to Movie Technique or Tell the Story to finish the remaining intensity.</li>
+              </ol>
+              <p><strong>Why it works:</strong> The meridian system responds even to <em>estimated</em> emotional contact. By working at a distance first, you reduce the charge before the client ever has to feel it fully. For clients with severe trauma, PTSD, or a history of being overwhelmed by their own emotions, this technique is often the safest starting point.</p>
+            </div>
+
+            <div class="callout callout-tip">
+              <div class="callout-label">💡 Pro Tip — Choosing the Right Gentle Technique</div>
+              <p>Think of the three techniques as a <strong>spectrum of emotional distance</strong>:</p>
+              <ul>
+                <li><strong>Tearless Trauma</strong> — Maximum distance. Client barely touches the emotion. Best for severe trauma, highly reactive clients, or early sessions.</li>
+                <li><strong>Movie Technique</strong> — Moderate distance. Client watches the memory but controls the pace. Good for most trauma work.</li>
+                <li><strong>Tell the Story</strong> — Closest contact. Client narrates while you regulate. Best when the client has some capacity to engage with the material and trusts you to stop them.</li>
+              </ul>
+              <p><strong>When in doubt, start with more distance and move closer.</strong> You can always deepen — you cannot un-trigger someone who has been flooded.</p>
+            </div>
+
+            <h2>Aspects — The Hidden Layers of Every Issue</h2>
+            <p>Here is something that catches many new practitioners off guard: you tap on a memory, the SUD drops beautifully, the client feels relief — and then next session, they say <em>"It didn't work. The feeling came back."</em></p>
+            <p>Did the tapping fail? Almost certainly not. What happened is that a <strong>different aspect</strong> of the same event became active.</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Aspects</div>
+              <h3 class="callout-title">Different Facets of the Same Event</h3>
+              <p>Every memory or issue has <strong>multiple aspects</strong> — different sensory, emotional, and cognitive layers that may each need separate tapping. Think of it like a diamond: you've polished one face, but there are others that still catch the light.</p>
+              <p><strong>Common types of aspects:</strong></p>
+              <ul>
+                <li><strong>Visual:</strong> What they saw — a face, a color, blood, darkness, a specific image</li>
+                <li><strong>Auditory:</strong> What they heard — a scream, a door slamming, words spoken, silence</li>
+                <li><strong>Emotional:</strong> The feelings — fear, anger, shame, helplessness, betrayal</li>
+                <li><strong>Physical:</strong> Body sensations — the pain, the cold, being held down, nausea</li>
+                <li><strong>Cognitive:</strong> The meaning made — <em>"It was my fault." "I should have known." "I'm not safe."</em></li>
+              </ul>
+              <p><strong>How to handle aspects:</strong> After the SUD drops on the initial target, ask: <em>"When you think about this event now, is there anything else that still bothers you? A sound? An image? A feeling in your body? A thought?"</em> Each new aspect gets its own round of tapping.</p>
+            </div>
+
+            <div class="callout callout-exercise">
+              <div class="callout-label">✏️ Exercise — Aspect Hunting</div>
+              <h3 class="callout-title">Practice Identifying Hidden Aspects</h3>
+              <p>Think of a mildly bothersome memory (SUD 3-4). After doing one round of tapping on the main feeling, ask yourself:</p>
+              <ul>
+                <li>Is there a <strong>specific image</strong> that still bothers me?</li>
+                <li>Is there a <strong>sound or voice</strong> connected to this?</li>
+                <li>Is there a <strong>body sensation</strong> I haven't addressed?</li>
+                <li>Is there a <strong>belief about myself</strong> attached to this event?</li>
+                <li>Is there <strong>another person's face or words</strong> that hold a charge?</li>
+              </ul>
+              <p><em>Write down each aspect you discover. This is the skill of thorough clinical work — the ability to keep looking after the obvious emotion has cleared.</em></p>
+            </div>
+
+            <h2>The Generalization Effect</h2>
+            <p>Here is one of the most beautiful things about this work, and something that will keep surprising you throughout your career:</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Generalization Effect</div>
+              <h3 class="callout-title">When Resolving One Event Heals Many</h3>
+              <p>After you resolve a specific traumatic memory, <strong>similar events often resolve automatically</strong> — without being directly addressed. This is the Generalization Effect.</p>
+              <p><strong>Example:</strong> A client taps on a specific memory of being humiliated by a teacher in 3rd grade. After that memory becomes neutral, they discover that three other school-related humiliation memories — which they hadn't mentioned — have also lost their emotional charge.</p>
+              <p><strong>Why does this happen?</strong> The brain stores similar experiences in connected neural networks. When you resolve the emotional charge of one node in the network, the de-activation spreads to connected nodes. It's as if you removed the keystone — and the whole arch relaxes.</p>
+              <p><strong>Clinical implication:</strong> You don't need to tap on every single bad memory a person has ever had. Focus on the <strong>most intense, most representative events</strong> in each cluster, and the Generalization Effect will often handle the rest.</p>
+            </div>
+
+            <h2>Personal Peace Procedure</h2>
+            <p>Gary Craig considered this one of his most important contributions — and I agree. The Personal Peace Procedure is a <strong>systematic, self-directed protocol</strong> for resolving the accumulated emotional weight of a lifetime.</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Personal Peace Procedure</div>
+              <h3 class="callout-title">A Systematic Approach to Emotional Clearing</h3>
+              <p><strong>The protocol:</strong></p>
+              <ol>
+                <li><strong>Make a list</strong> of every bothersome memory you can think of. Every event that still carries an emotional charge — big or small. Write them down. Most people generate 50-100+ items.</li>
+                <li><strong>Rate each one</strong> with a SUD score (0-10). This helps you prioritize.</li>
+                <li><strong>Begin tapping on one event per day</strong> — or as many as you can comfortably process. Start with the lower-SUD items to build confidence and skill.</li>
+                <li><strong>Work through the list systematically</strong> over weeks or months. Some events will take one session. Some will take several.</li>
+                <li><strong>Watch for the Generalization Effect</strong> — as you clear specific events, go back to your list and re-rate. You'll often find that items you haven't touched have already dropped in intensity.</li>
+              </ol>
+              <p><strong>Why this matters:</strong> Craig estimated that most emotional and many physical problems are rooted in <strong>unresolved specific events</strong>. Clear enough of those events, and the symptoms built on top of them begin to dissolve — often without the person understanding exactly why they feel so much better.</p>
+            </div>
+
+            <div class="callout callout-tip">
+              <div class="callout-label">💡 Pro Tip — Assigning the Personal Peace Procedure</div>
+              <p>This is one of the most valuable <strong>homework assignments</strong> you can give a client. It extends your work between sessions and empowers the client to become their own healer. Two important guidelines:</p>
+              <ul>
+                <li><strong>Start with low-intensity items</strong> (SUD 3-5). Never assign a client to work on high-intensity trauma alone at home.</li>
+                <li><strong>Set a boundary:</strong> "If anything on your list feels too big to do alone, bring it to our next session. That's what I'm here for."</li>
+              </ul>
+            </div>
+
+            <h2>Chasing the Pain</h2>
+            <p>This is a phenomenon that will happen in almost every session, and if you don't recognize it, you might think the tapping isn't working.</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept — Chasing the Pain</div>
+              <h3 class="callout-title">Following the Sensation as It Moves</h3>
+              <p>During tapping, a physical sensation will often <strong>move locations in the body</strong>. A client starts with chest tightness. After a round of tapping, the chest feels better — but now their throat feels constricted. You tap on the throat, and it releases — but now there's a knot in the stomach.</p>
+              <p><strong>This is not failure. This is progress.</strong></p>
+              <p>The emotional energy is releasing in layers, and the body processes it by moving it through different areas. Your job as practitioner is to <strong>follow it</strong>:</p>
+              <ol>
+                <li>After each round, ask: <strong>"Where do you feel it now?"</strong></li>
+                <li>If the location has changed, <strong>update the reminder phrase</strong> to match the new location: "This tightness in my throat" → "This knot in my stomach."</li>
+                <li>If the quality has changed (from pressure to tingling, from heat to cold), update that too.</li>
+                <li>Keep following until the sensation <strong>either dissolves completely or settles at SUD 0-2</strong>.</li>
+              </ol>
+              <p><em>Think of it like following a thread through a maze. Each location reveals the next one. Trust the body's intelligence — it knows the path to release.</em></p>
+            </div>
+
+            <div class="callout callout-exercise">
+              <div class="callout-label">✏️ Exercise — Chasing the Pain Self-Practice</div>
+              <h3 class="callout-title">Follow the Sensation</h3>
+              <p>Think of something mildly stressful (SUD 3-5). Notice where you feel it in your body. Tap one full round focused on that location. Then check:</p>
+              <ul>
+                <li>Is the sensation still in the same place?</li>
+                <li>Has it moved? Where to?</li>
+                <li>Has the quality changed (pressure → tingling, heat → cold, sharp → dull)?</li>
+                <li>Has the SUD changed?</li>
+              </ul>
+              <p>Follow the sensation for 3 rounds, updating your reminder phrase each time. <em>Notice how the body leads you if you let it.</em></p>
+            </div>
+
+            <!-- Case Study: Mariana -->
+            <h2>Putting It All Together</h2>
+
+            <div class="callout callout-case">
+              <div class="callout-label">🎭 Case Study — Read Before Continuing</div>
+              <h3 class="callout-title">Mariana, 29 — The Crying Loop</h3>
+              <p><strong>Situation:</strong> Mariana, 29, arrives at your office in tears. She's been crying for two days and can't stop. <strong>SUD: 9.</strong> When you ask what triggered it, she shakes her head: <em>"I don't know. It just won't stop. I don't even know why I'm crying."</em></p>
+              <p>She can't identify a specific thought. She can't name a specific event. She just feels overwhelmed by a wave of sadness that arrived without warning and won't leave.</p>
+              <p><strong>The challenge:</strong> How do you use tapping when the client can't identify the trigger? How do you tune when there's nothing specific to tune to? Which gentle technique fits this situation — and how do you begin?</p>
+              <p><em>Think through your approach before scrolling down to see the solution.</em></p>
+            </div>
+
+            <div class="callout callout-case">
+              <div class="callout-label">🎭 Case Study — Solution Revealed</div>
+              <h3 class="callout-title">Mariana — Working Through the Crying Loop</h3>
+              <ol>
+                <li><strong>First — stabilize.</strong> Mariana is at SUD 9. Before any technique work, bring her down with grounding: guided breathing (4-2-6), a glass of water, gentle bilateral tapping on her knees. <em>"You're safe here. We're going to work through this together. You don't need to understand it right now."</em></li>
+                <li><strong>Start with what you have.</strong> She can't name the trigger — but she can describe the physical experience. Use the body as the entry point: <em>"Where do you feel this sadness the most? Is it in your chest? Your throat?"</em> She says: <em>"My chest. It feels like a weight."</em></li>
+                <li><strong>Tap on the physical sensation first.</strong> Setup: <em>"Even though I have this heavy weight in my chest that won't stop, I deeply and completely accept myself."</em> Reminder: <em>"This weight in my chest."</em> Two rounds. SUD drops from 9 to 6.</li>
+                <li><strong>Now — use Tell the Story.</strong> At SUD 6, she's in the tuning zone. Ask gently: <em>"When did the crying start? What were you doing?"</em> She begins to narrate: <em>"I was at home, Sunday afternoon, and I saw my mother's photo on the shelf..."</em> — and her voice catches. <strong>Stop here.</strong></li>
+                <li><strong>Tap on this moment.</strong> The trigger reveals itself: the photo connected to a memory of a recent phone call with her mother where hurtful things were said. The crying wasn't random — it was grief and hurt that hadn't been processed. Tap on: <em>"Even though my mother's words hurt me and I couldn't say anything back, I accept myself and how I feel."</em></li>
+                <li><strong>Check for aspects.</strong> After SUD drops to 3: <em>"When you think about that phone call now, is there anything else that still bothers you?"</em> She identifies guilt (<em>"I should have said something"</em>) and a deeper belief (<em>"She'll never understand me"</em>). Tap on each aspect separately.</li>
+                <li><strong>Chase the pain.</strong> The chest weight moves to her throat ("things I didn't say"), then to her stomach ("I feel sick about it"). Follow each location.</li>
+                <li><strong>Close safely.</strong> Final SUD: 2. End with grounding and a positive closing: <em>"You found the thread. Your body knew what it was about all along."</em></li>
+              </ol>
+              <p><strong>Key lesson:</strong> When a client can't identify the trigger, <strong>start with the body</strong>. Physical sensations are always available, even when thoughts and memories aren't. The Tell the Story technique revealed the trigger that Mariana's conscious mind had hidden — the body led the way. This case also demonstrates Chasing the Pain (chest → throat → stomach) and Aspects (hurt → guilt → core belief) in a real clinical flow.</p>
+            </div>
+
+            <div class="callout callout-homework">
+              <div class="callout-label">📝 Homework — Module 5</div>
+              <h3 class="callout-title">Deepening Your Gentle Technique Skills</h3>
+              <ul>
+                <li><strong>Personal Peace Procedure:</strong> Start your own list. Write down at least 20 bothersome memories. Rate each with a SUD score. Tap on 3 of the lower-intensity ones (SUD 3-5) this week.</li>
+                <li><strong>Movie Technique self-practice:</strong> Choose a mildly bothersome memory (SUD 4-5). Give it a title. "Watch" the movie, stopping to tap whenever intensity rises. Continue until you can play it start to finish with no spike.</li>
+                <li><strong>Chasing the Pain journal:</strong> During your next 3 self-tapping sessions, write down where the sensation starts, where it moves, and what the final location is. Notice the pattern.</li>
+                <li><strong>Reflection:</strong> Write 3-5 lines about what the 6-stage emotional cycle looks like for one of your own recurring patterns. Where in the cycle do you usually notice you're in it?</li>
+              </ul>
+            </div>
+
+            <!-- Quiz -->
+            <div class="quiz-section">
+              <h3 class="quiz-title">Module 5 Check-In</h3>
+              <p class="quiz-subtitle">Test your understanding — no grades, just learning.</p>
+
+              <div class="quiz-question" data-correct="c">
+                <p class="quiz-q-text"><span class="quiz-q-number">1.</span> A client is tapping on a car accident memory. After two rounds, the SUD drops from 8 to 4. But then she says, "It's weird — I'm not scared of the crash anymore, but I keep hearing the sound of the glass breaking and it makes me sick." What is happening?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> The tapping failed — the fear is still there</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> She is fabricating a new problem to avoid dealing with the real one</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> A new aspect (auditory — the sound of breaking glass) has emerged and needs separate tapping</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> You should stop the session because SUD went back up</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! This is a textbook example of aspects. The visual/emotional fear of the crash resolved, but an auditory aspect (the sound of glass) emerged. Each aspect needs its own tapping — the original work succeeded.</div>
+                <div class="quiz-feedback is-incorrect-answer">This is a new aspect emerging — a different sensory layer (auditory) of the same event. The tapping on the original fear worked. Now the sound of breaking glass needs its own round of tapping. Aspects are normal and expected in thorough clinical work.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="b">
+                <p class="quiz-q-text"><span class="quiz-q-number">2.</span> You are using the Tearless Trauma technique. The client's guessed SUD has dropped from 8 to 2. What is the correct next step?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> End the session — guessed SUD of 2 means the work is done</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> Now ask the client to actually try to feel the memory and measure the real SUD</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> Switch immediately to the trauma algorithm</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> Ask the client to guess again — two low guesses confirm resolution</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! The Tearless Trauma protocol says: once the guessed SUD is low (0-3), ask the client to actually feel the memory and measure the real SUD. If the real SUD is also low, the work is done. If it's higher, switch to Movie Technique or Tell the Story to finish.</div>
+                <div class="quiz-feedback is-incorrect-answer">A guessed SUD is not the same as a real SUD. The Tearless Trauma protocol requires a verification step: once the guessed SUD drops to 3 or below, ask the client to actually access the memory and measure the real emotional charge. This confirms whether the work is truly complete.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="a">
+                <p class="quiz-q-text"><span class="quiz-q-number">3.</span> During a session, you notice the client is explaining their trauma in a calm, analytical voice: "I know this happened because my parents were stressed, and logically I understand it wasn't about me." Their SUD hasn't changed in three rounds. What is most likely happening?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> The client is intellectualizing — they are not tuned to the emotion, so the tapping has no target</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> The client has already processed the trauma and no longer needs tapping</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> The tapping points are being done in the wrong order</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> The client is lying about their SUD score</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! A calm, analytical narration with no SUD movement is a classic sign of intellectualizing. The client is in their head, not in their body. Guide them back to the felt experience: "Where do you feel this in your body right now?"</div>
+                <div class="quiz-feedback is-incorrect-answer">When a client speaks analytically about their trauma with no emotional coloring and the SUD won't budge, they're likely intellectualizing — thinking about the problem rather than feeling it. Without emotional tuning, the tapping has nothing to work on. Redirect to the body: "Where do you feel this right now?"</div>
+              </div>
+
+              <div class="quiz-question" data-correct="d">
+                <p class="quiz-q-text"><span class="quiz-q-number">4.</span> A client uses the Personal Peace Procedure at home. She tapped on a memory of being teased in 5th grade (SUD went from 6 to 0). At her next session, she reports that two other school memories she hadn't worked on "don't bother her anymore." What explains this?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> Placebo effect — she expected them to resolve, so they did</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> She is avoiding those memories and confusing avoidance with resolution</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> Time healed those memories, not the tapping</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> The Generalization Effect — resolving one event in a cluster often de-activates related events in the same neural network</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! This is the Generalization Effect in action. Similar memories are stored in connected neural networks. Resolving the emotional charge of one node can de-activate connected nodes — so related memories lose their charge without being directly addressed.</div>
+                <div class="quiz-feedback is-incorrect-answer">This is the Generalization Effect — one of the most powerful phenomena in EFT work. The brain stores similar experiences in connected neural networks. When you resolve the emotional charge of one key memory, the de-activation spreads to related memories in the same cluster.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="c">
+                <p class="quiz-q-text"><span class="quiz-q-number">5.</span> A client with severe PTSD from a violent event has never been able to talk about what happened without dissociating. Which gentle technique should you try FIRST?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> Tell the Story — so you can watch for intensity spikes and stop them</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> Movie Technique — the "screen" creates enough distance</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> Tearless Trauma — maximum emotional distance, working with guessed SUD rather than felt emotion</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> Full TFT trauma algorithm — the fastest approach</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! For a client who dissociates when engaging with the memory, Tearless Trauma is the safest starting point. It provides maximum emotional distance — the client estimates their SUD without fully feeling the memory. Once the guessed SUD drops, you can carefully move to Movie Technique or Tell the Story if needed.</div>
+                <div class="quiz-feedback is-incorrect-answer">When a client dissociates upon engaging with a memory, you need maximum emotional distance. Tearless Trauma is the gentlest technique — the client only guesses what their SUD would be, without fully accessing the memory. Tell the Story and Movie Technique require more emotional engagement, which could trigger dissociation. Always start with more distance and move closer gradually.</div>
+              </div>
+
+              <button class="quiz-submit">Check Answers</button>
+              <div class="quiz-score"></div>
             </div>
 
             <div class="module-nav">
@@ -1077,16 +1636,318 @@
               <p class="module-objective">Build the foundational practitioner skills of rapport, active listening, and validation. Learn critical safety protocols including abreaction management, dissociation screening, and grounding techniques.</p>
             </div>
 
-            <p><em>Full translated content with rapport techniques, open vs. closed questions, abreaction management protocol, contraindications list, dissociation screening, grounding techniques (5-4-3-2-1, bilateral tapping), informed consent template, and session safety planning — coming in next build pass.</em></p>
+            <!-- Video Placeholder -->
+            <div class="video-placeholder">
+              <span class="video-badge">Coming Soon</span>
+              <div class="video-play-icon"><svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg></div>
+              <div class="video-title">Practitioner Skills &mdash; Rapport, Listening &amp; Safety</div>
+              <div class="video-duration">~20 min</div>
+              <div class="video-outline">
+                <ul>
+                  <li>Building rapport: the foundation every session needs</li>
+                  <li>The art of asking: questions that open vs. questions that close</li>
+                  <li>Paired practice: conducting a timed session with a partner</li>
+                  <li>Safety essentials: abreaction protocol, dissociation, grounding, contraindications</li>
+                </ul>
+              </div>
+            </div>
+            <details class="video-prompt">
+              <summary>AI Video Generation Prompt</summary>
+              <div class="video-prompt-content">
+                <p><strong>Scene:</strong> Same warm studio. Renata seated, speaking directly to camera. For the safety section, a slightly more serious tone with key phrases as text overlays.</p>
+                <p><strong>Speaker:</strong> Renata Pessoa Aguiar. Warm and grounded. This module balances soft practitioner skills with firm safety protocols.</p>
+                <p><strong>Script outline (20 min):</strong></p>
+                <ul>
+                  <li>(0:00-2:00) Opening: "You can know every tapping point perfectly, but if your client doesn't feel safe with you, none of it matters."</li>
+                  <li>(2:00-6:00) Teach rapport: not a technique but genuine presence. Share the 5 practitioner phrases. Model each with tone and pacing.</li>
+                  <li>(6:00-9:00) Questions that open vs. questions that close. Show the contrast with examples.</li>
+                  <li>(9:00-12:00) Walk through the paired practice structure.</li>
+                  <li>(12:00-16:00) Safety section: abreaction protocol, recognizing dissociation (4 signs), 5-4-3-2-1 grounding (demonstrate live).</li>
+                  <li>(16:00-18:00) Contraindications list. Informed consent. Online session safety.</li>
+                  <li>(18:00-20:00) Homework assignment and transition to Module 7.</li>
+                </ul>
+                <p><strong>Tone:</strong> Warm and coaching for rapport section. Firm and clear for safety section.</p>
+              </div>
+            </details>
+
+            <h2>Rapport &mdash; The Foundation of Everything</h2>
+            <blockquote>"Without connection, there is no emotional openness. Without openness, tapping cannot reach the core. The client needs to feel: here I am safe to be exactly who I am."</blockquote>
+            <ul>
+              <li>Rapport is not a technique &mdash; it is <strong>genuine presence and compassionate intention</strong></li>
+              <li>It begins the moment the client sees you &mdash; in your posture, your eyes, your tone</li>
+              <li>Without it, even perfect technique will produce limited results</li>
+            </ul>
 
             <div class="callout callout-key">
-              <div class="callout-label">🔑 Content Preview</div>
-              <p>This module covers: rapport as the foundation of all therapeutic work, practitioner phrases for acolhimento/safety/validation, questions that open vs. close, abreaction management protocol, contraindications list, dissociation recognition signs and management, 5-4-3-2-1 sensory grounding, bilateral tapping without verbal content, informed consent template, session safety planning for online sessions.</p>
+              <div class="callout-label">🔑 Key Concept</div>
+              <h3 class="callout-title">Five Practitioner Phrases &mdash; Learn These by Heart</h3>
+              <ul>
+                <li><strong>Welcome:</strong> "I'm glad you're here today."</li>
+                <li><strong>Safety:</strong> "You're in a safe space. There is no right or wrong in what you feel."</li>
+                <li><strong>Validation:</strong> "It makes sense that you feel this way, given what you've been through."</li>
+                <li><strong>Reflective listening:</strong> "If I understand correctly, what you're telling me is&hellip;"</li>
+                <li><strong>Connection:</strong> "Thank you for trusting me with this. That is already an important step."</li>
+              </ul>
             </div>
 
+            <h2>The Art of Asking &mdash; Questions That Open vs. Questions That Close</h2>
+
+            <table class="tapping-table">
+              <thead>
+                <tr><th>Use These (Open)</th><th>Avoid These (Closed)</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>"How was it for you to go through that?"</td><td>"Why did you do that?" (accusatory)</td></tr>
+                <tr><td>"What does that bring up in you?"</td><td>"Don't you think you overreacted?" (judgment)</td></tr>
+                <tr><td>"If this emotion could speak, what would it say?"</td><td>"It wasn't that bad, was it?" (minimizing)</td></tr>
+                <tr><td>"Where do you feel this in your body right now?"</td><td>"Have you tried just stopping?" (invalidating)</td></tr>
+                <tr><td>"What led you to choose that path?"</td><td>"But that was ages ago, why does it still hurt?" (denying)</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout callout-tip">
+              <div class="callout-label">💡 Pro Tip &mdash; The Power of Silence</div>
+              <p>After asking an open question, <strong>wait</strong>. Do not fill the silence. The most important things a client says often come after a 5&ndash;10 second pause. Your silence communicates: "I'm here. Take your time. What you have to say matters."</p>
+            </div>
+
+            <h2>Paired Practice &mdash; Timed Session Structure</h2>
+            <p>This is the heart of practitioner training. Theory becomes skill only through practice.</p>
+
+            <div class="callout callout-exercise">
+              <div class="callout-label">✏️ Exercise &mdash; Paired Practice (25 min total)</div>
+              <h3 class="callout-title">Timed Session With a Partner</h3>
+              <p><strong>Setup:</strong> Find a practice partner. Assign Person A (practitioner) and Person B (client/observer).</p>
+              <p><strong>Person A &mdash; Practitioner Script (12 min):</strong></p>
+              <ol>
+                <li>Welcome and build rapport (2 min)</li>
+                <li>"What would you like to work on today?" &mdash; active listening (3 min)</li>
+                <li>Identify the emotion + measure SUD (2 min)</li>
+                <li>EFT sequence or TFT algorithm (5 min)</li>
+              </ol>
+              <p><strong>Person B &mdash; Observer Notes:</strong></p>
+              <ul>
+                <li>Which question opened the most space?</li>
+                <li>What did the practitioner do well?</li>
+                <li>What would you change?</li>
+              </ul>
+              <p><strong>Switch roles</strong> (12 min). Then share one insight per pair (1 min each).</p>
+            </div>
+
+            <h2>Safety Protocols &mdash; Non-Negotiable Knowledge</h2>
+            <p>Everything that follows in this section is <strong>not optional</strong>. These protocols protect your clients and protect you as a practitioner.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Critical Safety Content</div>
+              <h3 class="callout-title">Abreaction Management Protocol</h3>
+              <p>An <strong>abreaction</strong> is an intense, sudden emotional release during a session &mdash; uncontrollable crying, shaking, hyperventilation, or a sudden flood of traumatic memory. It is not dangerous in itself, but it must be managed carefully.</p>
+              <p><strong>Step-by-step protocol:</strong></p>
+              <ol>
+                <li><strong>Stay calm.</strong> Your nervous system regulates theirs. If you panic, they escalate.</li>
+                <li><strong>Stop content-focused tapping.</strong> Do not continue asking about the memory or emotion.</li>
+                <li><strong>Switch to continuous bilateral tapping</strong> on the collarbone point or karate chop point &mdash; without any verbal content. Just tap steadily and calmly.</li>
+                <li><strong>Guide breathing:</strong> "Breathe with me. In&hellip; two&hellip; three&hellip; four. Hold. Out&hellip; two&hellip; three&hellip; four&hellip; five&hellip; six."</li>
+                <li><strong>Ground them in the room</strong> (use the 5-4-3-2-1 technique below).</li>
+                <li><strong>"Squeeze and breathe":</strong> Have them squeeze a cushion or their own hands tightly for 5 seconds, then release. Repeat 3 times.</li>
+                <li><strong>Offer water.</strong> The act of drinking engages the parasympathetic nervous system.</li>
+                <li><strong>Do not end the session at the peak.</strong> Bring the client to a calm, grounded state before closing.</li>
+                <li><strong>If the abreaction does not resolve within 10&ndash;15 minutes</strong>, consider whether the client needs referral to a licensed mental health professional.</li>
+              </ol>
+            </div>
+
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Safety Warning</div>
+              <h3 class="callout-title">Contraindications &mdash; When NOT to Use EFT/TFT</h3>
+              <p>The following conditions require either referral to a licensed professional or extreme caution with specialized training:</p>
+              <ul>
+                <li><strong>Active psychosis</strong> (hallucinations, delusions, disordered thinking)</li>
+                <li><strong>Dissociative Identity Disorder (DID)</strong> &mdash; requires specialized trauma training</li>
+                <li><strong>Active substance intoxication</strong> &mdash; the client cannot meaningfully engage</li>
+                <li><strong>Seizure disorders</strong> &mdash; tapping rhythms may potentially trigger episodes in susceptible individuals</li>
+                <li><strong>Severe personality disorders</strong> &mdash; requires clinical supervision</li>
+                <li><strong>Recent cardiac events</strong> &mdash; intense emotional release can affect cardiovascular function</li>
+                <li><strong>Suicidal ideation</strong> &mdash; immediate referral to a licensed professional; do not attempt to treat with tapping alone</li>
+                <li><strong>Pregnancy</strong> &mdash; exercise caution with intense emotional work; consult with the client's healthcare provider</li>
+              </ul>
+              <p><strong>When in doubt, refer.</strong> Referring is not failure &mdash; it is professional responsibility.</p>
+            </div>
+
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Safety Warning</div>
+              <h3 class="callout-title">Recognizing Dissociation &mdash; 4 Key Signs</h3>
+              <p>Dissociation means the client has disconnected from their present experience as a protective mechanism. It can look deceptively like calm resolution. Watch for:</p>
+              <ol>
+                <li><strong>Glazed eyes</strong> &mdash; a distant, unfocused look, as if they are "not there"</li>
+                <li><strong>Flat affect</strong> &mdash; sudden emotional flatness after high intensity (this is NOT resolution)</li>
+                <li><strong>Sudden calm that feels wrong</strong> &mdash; the shift is too abrupt, too complete; genuine resolution feels peaceful, not empty</li>
+                <li><strong>Time disorientation</strong> &mdash; they seem confused about where they are or how much time has passed</li>
+              </ol>
+              <p><strong>If you observe dissociation:</strong> Stop tapping immediately. Use grounding techniques. Orient them to the room. Do not continue content-focused work until they are fully present.</p>
+            </div>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept</div>
+              <h3 class="callout-title">5-4-3-2-1 Sensory Grounding Technique</h3>
+              <p>Use this whenever a client is dissociating, overwhelmed, or in abreaction. Guide them through:</p>
+              <ul>
+                <li><strong>5 things you can SEE</strong> &mdash; "Tell me five things you can see in this room right now."</li>
+                <li><strong>4 things you can TOUCH</strong> &mdash; "Feel the chair under you. The fabric of your clothes. What else?"</li>
+                <li><strong>3 things you can HEAR</strong> &mdash; "What sounds do you notice?"</li>
+                <li><strong>2 things you can SMELL</strong> &mdash; "Can you smell anything? Coffee? Air freshener?"</li>
+                <li><strong>1 thing you can TASTE</strong> &mdash; "Take a sip of water. What do you taste?"</li>
+              </ul>
+              <p>This technique works by progressively engaging each sense, pulling attention out of internal distress and into present-moment sensory reality.</p>
+            </div>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept</div>
+              <h3 class="callout-title">Bilateral Tapping for Grounding</h3>
+              <p>When a client is too distressed for verbal processing, switch to <strong>bilateral tapping without verbal content</strong>:</p>
+              <ul>
+                <li>Tap alternately on the client's knees, or have them cross their arms and tap alternately on their upper arms ("butterfly hug")</li>
+                <li>Maintain a slow, steady rhythm &mdash; approximately one tap per second</li>
+                <li>Do not speak or ask questions. Just tap and breathe together.</li>
+                <li>Continue for 2&ndash;5 minutes or until the client's breathing normalizes</li>
+              </ul>
+              <p>This engages bilateral brain processing without requiring the client to access any content.</p>
+            </div>
+
+            <h2>Informed Consent &mdash; Professional Requirement</h2>
+            <p>Every practitioner must obtain informed consent before beginning work with a client. This protects both parties and sets clear expectations.</p>
+
+            <div class="callout callout-key">
+              <div class="callout-label">🔑 Key Concept</div>
+              <h3 class="callout-title">Informed Consent Template &mdash; Essential Elements</h3>
+              <p>Your informed consent document should include:</p>
+              <ol>
+                <li><strong>Nature of EFT/TFT:</strong> Brief description of what the techniques involve (tapping on acupressure points while focusing on emotional content)</li>
+                <li><strong>Evidence base and limitations:</strong> "EFT has a growing evidence base for anxiety, PTSD, and phobias. Research is ongoing, and results vary by individual."</li>
+                <li><strong>Not a substitute:</strong> "EFT/TFT sessions are not a substitute for medical treatment, psychological therapy, or psychiatric care."</li>
+                <li><strong>Practitioner qualifications:</strong> Your training, certifications, and scope of practice</li>
+                <li><strong>Potential for emotional intensity:</strong> "Sessions may bring up intense emotions. You have the right to pause or stop at any time."</li>
+                <li><strong>Confidentiality:</strong> What you will and will not share, and the exceptions (harm to self or others, mandatory reporting)</li>
+                <li><strong>Client's right to stop:</strong> "You may end the session at any time, for any reason."</li>
+                <li><strong>Fees and cancellation policy</strong></li>
+                <li><strong>Signature and date</strong></li>
+              </ol>
+            </div>
+
+            <h2>Online Session Safety Planning</h2>
+            <p>Remote sessions introduce unique safety considerations. Prepare for these before your first online client.</p>
+
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Safety Warning</div>
+              <h3 class="callout-title">Online Session Checklist</h3>
+              <ul>
+                <li><strong>Ensure private space:</strong> Confirm the client is in a private location where they will not be overheard or interrupted</li>
+                <li><strong>Emergency contact on file:</strong> Have the name and phone number of someone who can physically reach the client if needed</li>
+                <li><strong>Know the client's physical location:</strong> You need their address in case emergency services need to be contacted</li>
+                <li><strong>Technology backup plan:</strong> Agree in advance what to do if the connection drops (e.g., "If we lose connection, I will call your phone within 2 minutes")</li>
+                <li><strong>Grounding objects:</strong> Ask the client to have water, a blanket, or a comfort object nearby before starting</li>
+                <li><strong>Session safety word:</strong> Establish a word the client can say if they need to stop immediately without explaining why</li>
+              </ul>
+            </div>
+
+            <h2>Session Safety &mdash; Disclosures and Mandatory Reporting</h2>
+            <div class="callout callout-warning">
+              <div class="callout-label">⚠️ Safety Warning</div>
+              <h3 class="callout-title">What to Do When a Client Discloses Harm</h3>
+              <p>During a session, a client may disclose abuse, self-harm, or intent to harm others. Know your protocol in advance:</p>
+              <ul>
+                <li><strong>Stay calm and present.</strong> Do not show shock or judgment.</li>
+                <li><strong>Acknowledge what they shared:</strong> "Thank you for trusting me with this. I want to make sure you get the right support."</li>
+                <li><strong>Know your local mandatory reporting obligations.</strong> In many jurisdictions, practitioners must report child abuse, elder abuse, and imminent danger to self or others.</li>
+                <li><strong>Do not attempt to treat beyond your scope.</strong> Refer to a licensed mental health professional immediately.</li>
+                <li><strong>End the session safely.</strong> Use grounding techniques. Ensure the client is stable before ending. Confirm their next step (e.g., "Will you call this number today?").</li>
+                <li><strong>Document everything.</strong> Record what was disclosed, what you said, what referral you made, and the time.</li>
+              </ul>
+            </div>
+
+            <div class="callout callout-homework">
+              <div class="callout-label">📝 Homework &mdash; Module 6</div>
+              <h3 class="callout-title">Build Your Safety Foundation</h3>
+              <ul>
+                <li><strong>Practice 1:</strong> Conduct 2 real practice sessions with people in your life (record everything: emotion, SUD before/after, what surprised you, where you got stuck)</li>
+                <li><strong>Practice 2:</strong> Write down the biggest challenge you faced in leading a session. Where did you freeze?</li>
+                <li><strong>Research:</strong> Look up Psychological Reversal &mdash; bring 3 points to discuss next module</li>
+                <li><strong>Safety prep:</strong> Draft your own informed consent document using the template above</li>
+                <li><strong>Memorize:</strong> The 4 signs of dissociation and the 5-4-3-2-1 grounding technique</li>
+                <li><strong>Choose:</strong> 1 hypothetical scenario to present next module</li>
+              </ul>
+            </div>
+
+            <!-- Quiz -->
+            <div class="quiz-section">
+              <h3 class="quiz-title">Module 6 Check-In</h3>
+              <p class="quiz-subtitle">Test your understanding &mdash; no grades, just learning.</p>
+
+              <div class="quiz-question" data-correct="b">
+                <p class="quiz-q-text"><span class="quiz-q-number">1.</span> A client begins hyperventilating and crying uncontrollably during a session. What is your FIRST action?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> Continue tapping more intensely to push through the emotion</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> Stop content-focused tapping and switch to bilateral tapping with guided breathing</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> End the session immediately for safety</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> Ask them to rate their SUD score</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! During an abreaction, stop all content-focused work. Switch to bilateral tapping without verbal content and guide their breathing. Your calm presence is the intervention.</div>
+                <div class="quiz-feedback is-incorrect-answer">During an abreaction, the first step is to stop content-focused tapping and switch to bilateral tapping with guided breathing. Pushing through or ending abruptly can both cause harm.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="c">
+                <p class="quiz-q-text"><span class="quiz-q-number">2.</span> After intense tapping, your client suddenly becomes very calm with glazed eyes and seems "not there." What is most likely happening?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> The tapping was completely successful &mdash; celebrate the result</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> They are simply tired from the emotional work</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> They are likely dissociating &mdash; stop tapping and use grounding techniques</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> They need a different TFT algorithm</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! Glazed eyes and sudden, empty calm after intense work are classic dissociation signs. Stop tapping immediately and ground them using 5-4-3-2-1 or bilateral tapping without content.</div>
+                <div class="quiz-feedback is-incorrect-answer">Glazed eyes and sudden flatness after intense emotional work suggest dissociation, not resolution. Genuine resolution feels peaceful; dissociation feels empty. Stop tapping and use grounding techniques.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="a">
+                <p class="quiz-q-text"><span class="quiz-q-number">3.</span> Which of the following is a contraindication for EFT/TFT practice?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> Active psychosis or Dissociative Identity Disorder</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> Mild everyday stress or worry</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> Performance anxiety before a presentation</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> A specific phobia such as fear of spiders</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! Active psychosis and DID require specialized training and licensed clinical supervision. These are outside the scope of standard EFT/TFT practice.</div>
+                <div class="quiz-feedback is-incorrect-answer">Active psychosis and DID are contraindications that require referral to specialized, licensed professionals.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="d">
+                <p class="quiz-q-text"><span class="quiz-q-number">4.</span> What does the "5" in the 5-4-3-2-1 grounding technique refer to?</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> 5 deep breaths before starting</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> 5 rounds of tapping</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> 5 seconds of silence</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> 5 things the client can see in the room</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! The sequence is 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. It grounds through progressive sensory engagement.</div>
+                <div class="quiz-feedback is-incorrect-answer">The 5-4-3-2-1 technique starts with identifying 5 things you can see, then 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.</div>
+              </div>
+
+              <div class="quiz-question" data-correct="b">
+                <p class="quiz-q-text"><span class="quiz-q-number">5.</span> Your informed consent document should include all of the following EXCEPT:</p>
+                <div class="quiz-options">
+                  <div class="quiz-option" data-value="a"><span class="quiz-radio"></span> A statement that EFT/TFT is not a substitute for medical or psychological treatment</div>
+                  <div class="quiz-option" data-value="b"><span class="quiz-radio"></span> A guarantee of specific results or outcomes</div>
+                  <div class="quiz-option" data-value="c"><span class="quiz-radio"></span> The client's right to stop the session at any time</div>
+                  <div class="quiz-option" data-value="d"><span class="quiz-radio"></span> Your qualifications and scope of practice</div>
+                </div>
+                <div class="quiz-feedback is-correct-answer">Correct! You must never guarantee specific results.</div>
+                <div class="quiz-feedback is-incorrect-answer">Informed consent must never include guarantees of specific outcomes.</div>
+              </div>
+
+              <button class="quiz-submit">Check Answers</button>
+              <div class="quiz-score"></div>
+            </div>
+
+            <!-- Module Navigation -->
             <div class="module-nav">
-              <button class="module-nav-btn" data-nav="prev">← Previous</button>
-              <button class="module-nav-btn is-primary" data-nav="next">Next: Professional Sessions →</button>
+              <button class="module-nav-btn" data-nav="prev">&larr; Previous: Emotional Cycle &amp; Tuning</button>
+              <button class="module-nav-btn is-primary" data-nav="next">Next: Professional Sessions &rarr;</button>
             </div>
           </div>
 
