@@ -37,6 +37,8 @@
   }
 
   // ── Access Control ────────────────────────────────────
+  const PASSWORD = "renatacourses";
+
   function checkAccess() {
     const params = new URLSearchParams(window.location.search);
     const token = params.get("access");
@@ -49,15 +51,47 @@
     const stored = localStorage.getItem(accessKey);
     const gate = document.getElementById("access-gate");
 
-    // During preview/feedback phase: hide the gate entirely
-    // TODO: Re-enable gate when Stripe links are live by removing this line
-    if (gate) gate.style.display = "none";
-
     if (!stored && gate) {
-      // gate.classList.add("is-visible");
+      gate.classList.add("is-visible");
+      initPasswordGate(gate);
       return false;
     }
     return true;
+  }
+
+  function initPasswordGate(gate) {
+    const form = gate.querySelector(".access-gate-form");
+    const input = gate.querySelector(".access-gate-password");
+    const error = gate.querySelector(".access-gate-error");
+    if (!form || !input) return;
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (input.value.trim().toLowerCase() === PASSWORD) {
+        localStorage.setItem(accessKey, "granted");
+        gate.classList.remove("is-visible");
+        // Re-initialize everything now that access is granted
+        restoreProgress();
+        initQuizzes();
+        initScenarios();
+        initTapDiagrams();
+        initPointQuizzes();
+        initReactionDemo();
+        initPhraseBuilders();
+        initAlgoSelectors();
+        initFlowPickers();
+        initFlipCards();
+        initPositionBuilders();
+        updateProgressBar();
+      } else {
+        if (error) {
+          error.textContent = "Incorrect password. Try again.";
+          error.classList.add("is-visible");
+        }
+        input.value = "";
+        input.focus();
+      }
+    });
   }
 
   // ── Elements ──────────────────────────────────────────
