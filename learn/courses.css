@@ -29,11 +29,11 @@
 
 /* ── Language Toggle ─────────────────────────────────── */
 
-[data-lang] { display: none; }
-[data-lang="en"] { display: revert; }
+[data-lang]:not(.lang-toggle-btn) { display: none; }
+[data-lang="en"]:not(.lang-toggle-btn) { display: revert; }
 
-.lang-pt [data-lang="en"] { display: none; }
-.lang-pt [data-lang="pt"] { display: revert; }
+.lang-pt [data-lang="en"]:not(.lang-toggle-btn) { display: none; }
+.lang-pt [data-lang="pt"]:not(.lang-toggle-btn) { display: revert; }
 
 .lang-toggle {
   display: inline-flex;
