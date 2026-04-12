@@ -15,6 +15,11 @@
   const accessKey = courseId + "_access";
   const langKey = "course_lang";
 
+  // ── Admin Mode (show video prompts) ────────────────────
+  if (new URLSearchParams(window.location.search).has("admin")) {
+    document.body.classList.add("is-admin");
+  }
+
   // ── Language Toggle ───────────────────────────────────
   function initLanguage() {
     const saved = localStorage.getItem(langKey) || "en";

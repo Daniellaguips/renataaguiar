@@ -555,6 +555,11 @@
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 0 0 14px 14px;
   overflow: hidden;
+  display: none; /* Hidden from students — only visible with ?admin in URL */
+}
+
+.is-admin .video-prompt {
+  display: block;
 }
 
 .video-prompt summary {
